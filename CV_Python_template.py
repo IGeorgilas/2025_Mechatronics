@@ -36,6 +36,7 @@ while(True):
     # Display the original frame in a window
     cv2.imshow('frame-image',frame)
 
+    
     # Display the grey image in another window
     cv2.imshow('gray-image',gray)
     
@@ -43,7 +44,7 @@ while(True):
     end = time.perf_counter()
     
     # Print to console the exucution time in FPS (frames per second)
-    #print ('{:4.1f}'.format(1/(end - start)))
+    print ('{:4.1f}'.format(1/(end - start)))
 
     # If the button q is pressed in one of the windows 
     if cv2.waitKey(20) & 0xFF == ord('q'):
