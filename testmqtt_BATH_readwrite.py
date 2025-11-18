@@ -33,7 +33,7 @@ client.username_pw_set("student",password="HousekeepingGlintsStreetwise")
 client.connect("fesv-mqtt.bath.ac.uk",31415,60)
 
 # Create your main topic string. Everything else should be fields with values 1-8
-MainTopic = "TeamTopic/"
+MainTopic = "TeamTopic"
 
 # Start the client to enable the above events to happen
 client.loop_start()
@@ -50,10 +50,10 @@ while(1):
         time.sleep(1)
         
         # Publish the value (integer) as a string. All messages are strings
-        client.publish(MainTopic+"5",str(val))
+        client.publish(MainTopic,str(val))
 
         # Plot in the terminal what we just did
-        print("%s %d" % (MainTopic+"5", val))
+        print("%s %d" % (MainTopic, val))
         val=val+1
     
     # Capture a KeyboardInterrupt, i.e. Ctrl-C in the terminal window

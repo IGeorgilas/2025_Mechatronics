@@ -12,7 +12,8 @@ import time
 def on_connect(client,userdata,flags,rc):
     print ("Connected with result code "+str(rc))
     #client.subscribe("$SYS/#")
-    client.subscribe("IG/test")
+    client.subscribe("TeamTopic")
+    print("Subscribed to TeamTopic")
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
