@@ -25,6 +25,7 @@ sock = socket.socket(socket.AF_INET,    # Family of addresses, in this case IP (
 # Bind to the socket and wait for data on this port
 sock.bind((UDP_IP, UDP_PORT))
 print("Listening on IP:", UDP_IP, "Port:", UDP_PORT)
+# etet
 
 # Wait indifenetly (you will need to use Ctrl+C to stop the program)
 while True:
