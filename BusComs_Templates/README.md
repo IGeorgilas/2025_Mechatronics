@@ -1,4 +1,26 @@
-# Running any of the scripts (.sh) on a Raspberry Pi
+
+## To check that all boards are communicating over I2C
+
+You connect toq the Raspberry Pi via SSH and run:
+
+```
+i2cdetect -y 1
+```
+and you expect to see something like this (example with all boards connected):
+
+```
+    0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:                         -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- 1e -- 
+20: -- -- -- -- -- -- -- -- -- -- 2a -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- 48 -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- 68 -- -- 6b -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+```
+                         
+## Running any of the scripts (.sh) on a Raspberry Pi
 
 To run the script you need:
 
