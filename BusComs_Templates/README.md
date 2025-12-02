@@ -1,7 +1,7 @@
 
 ## To check that all boards are communicating over I2C
 
-You connect toq the Raspberry Pi via SSH and run:
+You connect to the Raspberry Pi via SSH and run:
 
 ```
 i2cdetect -y 1
